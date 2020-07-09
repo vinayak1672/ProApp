@@ -133,7 +133,7 @@ public class Registration extends AppCompatActivity {
                     .setMaxRetries(2)
                     .startUpload(); //Starting the upload
 
-            Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Done", Toast.LENGTH_SHORT).show();
 
         } catch (Exception exc) {
             Toast.makeText(this, "Error==" + exc.getMessage(), Toast.LENGTH_SHORT).show();
@@ -177,7 +177,7 @@ public class Registration extends AppCompatActivity {
             //If permission is granted
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 //Displaying a toast
-                Toast.makeText(this, "Permission granted now you can read the storage", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Permission of storage is given", Toast.LENGTH_LONG).show();
             } else {
                 //Displaying another toast if permission is not granted
                 Toast.makeText(this, "Oops you just denied the permission", Toast.LENGTH_LONG).show();
