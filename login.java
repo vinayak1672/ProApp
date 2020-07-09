@@ -73,7 +73,7 @@ public class login extends AppCompatActivity {
     private boolean validemail() {
 
         if (email.isEmpty()) {
-            ed_email.setError("Feild Can't Be Empty");
+            ed_email.setError(" E- mail Field Can't Be Empty");
             return false;
         } else {
             ed_email.setError(null);
@@ -84,7 +84,7 @@ public class login extends AppCompatActivity {
     private boolean validpassword() {
 
         if (pw.isEmpty()) {
-            password.setError("Feild Can't Be Empty");
+            password.setError("Password field can't be empty");
             return false;
         } else {
             password.setError(null);
